@@ -23,7 +23,7 @@ const mapDispatchToProps = (dispatch) => ({
   onClickTag: (tag, pager, payload) =>
     dispatch({ type: APPLY_TAG_FILTER, tag, pager, payload }),
   onSearch: (title, pager, payload) =>
-      dispatch({ type: APPLY_SEARCH_FILTER, title, pager, payload }),
+    dispatch({ type: APPLY_SEARCH_FILTER, title, pager, payload }),
   onLoad: (tab, pager, payload) =>
     dispatch({ type: HOME_PAGE_LOADED, tab, pager, payload }),
   onUnload: () => dispatch({ type: HOME_PAGE_UNLOADED }),
